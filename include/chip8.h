@@ -11,7 +11,8 @@
 #define FONTSET_SIZE 80
 #define FONTSET_START_ADDRESS 0x50
 
-struct chip8 {
+struct chip8
+{
   uint8_t registers[16];
   uint8_t memory[4096];
   uint16_t index;
@@ -25,9 +26,9 @@ struct chip8 {
   uint16_t opcode;
 };
 
-int rand_byte(void);
+int rand_byte (void);
 
-struct chip8 init_chip8(void);
-void load_rom(char const *filename, struct chip8 chip8);
+struct chip8 init_chip8 (void);
+void load_rom (char const *filename, struct chip8 *chip8);
 
 #endif // !CHIP8_C
