@@ -1,3 +1,6 @@
+/*
+ * Dairen Jean 2/2/2025
+ */
 #include "include/chip8.h"
 #include "include/graphics.h"
 #include "include/instructions.h"
